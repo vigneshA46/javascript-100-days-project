@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+
+  /* font-family: "Poppins", sans-serif;*/
+}
+.header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 5%;
+  height: 50px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(179, 179, 179);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  border-radius: 2%;
+  background-color: white;
+}
+.about img {
+  border-radius: 100%;
+}
+.subs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subs a,
+button {
+  padding: 0 20px;
+  text-decoration: none;
+}
+.subs button {
+  width: 100px;
+  height: 25px;
+  font-weight: 600;
+  background-color: rgb(0, 132, 255);
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.unleash h1,
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.unleash {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+  background-color: rgb(9, 8, 31);
+  color: white;
+  width: 100%;
+  height: 500px;
+}
+.unleash .para {
+  padding-top: 50px;
+}
+.bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.bot button {
+  width: 125px;
+  height: 35px;
+  background-color: rgb(0, 132, 255);
+  border: none;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+.bot a {
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(0, 132, 255);
+}
+/*abt*/
+.aboutus {
+  display: flex;
+  flex-basis: 30%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px 10%;
+}
+.about1 {
+  margin-right: 20px;
+}
+.font1 {
+  font-size: 25px;
+  color: rgb(255, 0, 0);
+}
+.font2 {
+  font-size: 25px;
+  color: rgb(255, 230, 0);
+}
+.font3 {
+  font-size: 25px;
+  color: rgb(72, 255, 0);
+}
+.material1 {
+  display: flex;
+  margin-left: 10%;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.material2 {
+  width: 80%;
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 30%;
+  margin-left: 10%;
+}
+.mat1,
+.mat1 img {
+  border: solid 1.5px rgb(207, 207, 207);
+  border-radius: 5px;
+}
+.mat1 img {
+  margin-bottom: 50px;
+}
+.mat1 i {
+  padding-left: 40%;
+}
+.mat1 a {
+  text-decoration: none;
+  color: black;
+}
+.pdf button {
+  width: 125px;
+  height: 30px;
+  background-color: rgb(9, 8, 31);
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 500;
+}
+.pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.pdf a {
+  color: white;
+  text-decoration: none;
+}
+.mat1 h4 {
+  margin-bottom: 10px;
+}
+.youtube {
+  padding: 70px 0;
+  background-color: rgb(9, 8, 31);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 50%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.youtube img {
+  border-radius: 5%;
+}
+.youtube h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.subsc {
+  width: 125px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.subsc a {
+  text-decoration: none;
+  color: white;
+}
+.menubar {
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  display: none;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.a123 {
+  display: flex;
+}
+.a123 li {
+  display: inline-block;
+  padding: 0 25px;
+  align-items: center;
+  justify-content: space-around;
+}
+.a123 li a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  /* Navigation adjustments for small screens */
+  body{
+    max-width: 600px;
+  }
+  .unleash{
+    height: 550px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a123 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .a123 li {
+    display: block;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .navbar .menubar {
+    display: block; /* Show the menu icon */
+  }
+
+  .navbar ul {
+    display: none; /* Hide the navigation links initially */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: white;
+    width: 100%;
+  }
+
+  .navbar ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .a123 li a {
+    color: black;
+    text-decoration: none;
+  }
+  .material2{
+    display: block;
+    width: 279px;
+  }
+  
+}
+
