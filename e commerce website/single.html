@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product View - REDSTORE</title>
+    <link rel="stylesheet" href="single.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="@@" width="125px" />
+      </div>
+      <ul class="a123">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#pro">Product</a></li>
+        <li><a href="#abt">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="login.html">Account</a></li>
+        <li>
+          <a href=""
+            ><img src="images/cart.png" alt="@@" width="20px" height="20px"
+          /></a>
+        </li>
+      </ul>
+    </div>
+    <!--product-->
+    <div class="prod">
+      <div class="bigimg">
+        <img id="bigimgf" src="images/product-1.jpg" alt="00" />
+        <div class="details">
+          <div>
+            <p>home/T-Shirt</p>
+            <h2>Red Printed T-shirt <br />By HRX</h2>
+            <p>$50.00</p>
+            <select name="ShirtSize" id="size">
+              <option value="XXL">XXL</option>
+              <option value="XL">XL</option>
+              <option value="L">L</option>
+              <option value="medium">medium</option>
+              <option value="small">small</option>
+            </select>
+            <input type="number" placeholder="1" /><br />
+            <button class="buttun">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="row1">
+        <div class="smallimgs">
+          <img
+            src="images/gallery-1.jpg"
+            alt=""
+            class="smallimg"
+            onclick="myfunction()"
+          />
+          <img
+            src="images/gallery-2.jpg"
+            alt=""
+            class="smallimg"
+            onclick="myfunction()"
+          />
+          <img
+            src="images/gallery-3.jpg"
+            alt=""
+            class="smallimg"
+            onclick="myfunction()"
+          />
+          <img
+            src="images/gallery-4.jpg"
+            alt=""
+            class="smallimg"
+            onclick="myfunction()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="relate">Related Products</div>
+    <div class="line"></div>
+    <div class="small">
+      <div class="row">
+        <div class="col4">
+          <img src="images/product-9.jpg" alt="" />
+          <h4>Roadster black watch</h4>
+          <p>$70.00</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-10.jpg" alt="" />
+          <h4>Premium Black shoe</h4>
+          <p>$60.00</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-11.jpg" alt="" />
+          <h4>Branded Casual Lufur</h4>
+          <p>$30.00</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-12.jpg" alt="" />
+          <h4>Branded Casual Pants</h4>
+          <p>$90.00</p>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer" id="abt">
+      <div class="container">
+        <div class="row">
+          <div class="foot1">
+            <h3>Download Our App</h3>
+            <p>Download App For Android and ios Mobile Phone</p>
+          </div>
+          <div class="foot2">
+            <img src="images/logo-white.png" alt="00" />
+            <p>
+              Our purpose is to sustinably make the pleasure and benefits of
+              sports accessible to the people
+            </p>
+          </div>
+          <div class="foot3">
+            <h3>Useful links</h3>
+            <ul>
+              <li>coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="foot4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script-->
+    <script>
+      var Productimg = document.getElementById("bigimgf");
+      var Smallimg = document.getElementsByClassName("smallimg");
+      Smallimg[0].onclick = function () {
+        Productimg.src = Smallimg[0].src;
+      };
+      Smallimg[1].onclick = function () {
+        Productimg.src = Smallimg[1].src;
+      };
+      Smallimg[2].onclick = function () {
+        Productimg.src = Smallimg[2].src;
+      };
+      Smallimg[3].onclick = function () {
+        Productimg.src = Smallimg[3].src;
+      };
+    </script>
+  </body>
+</html>
